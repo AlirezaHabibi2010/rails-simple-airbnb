@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="navbar">
+    <h1 class="text-center">All our Flats</h1>
+    <a href="#" class="btn btn-primary">add flat</a>
+  </div>
+
+
+    <div id="flats" class="row">
+      <% @flats.each do |flat| %>
+        <%= render "flatcard", flat: flat %>
+      <% end %>
+    </div>
+
+</div>
